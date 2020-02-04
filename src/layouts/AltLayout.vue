@@ -7,6 +7,8 @@
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/new">New</g-link>
+        <g-link class="nav__link" to="/new/products/">Products</g-link>
       </nav>
     </header>
     <slot />
@@ -23,16 +25,13 @@ query {
 
 <style>
 body {
-  background-color: #ac5f86;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #2a2a2a;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
-}
-a {
-  color: #ffffff;
 }
 
 .layout {
