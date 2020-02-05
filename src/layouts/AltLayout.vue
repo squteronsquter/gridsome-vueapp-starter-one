@@ -11,8 +11,12 @@
         <g-link exact class="nav__link" to="/new/products/">Produkty</g-link>
       </nav>
     </header>
-    <slot />
-    <Footer v-if="showFooter"></Footer>
+    <div class="innerWrapper">
+      <slot />
+    </div>
+    <div>
+      <Footer v-if="showFooter"></Footer>
+    </div>
   </div>
 </template>
 
@@ -48,20 +52,32 @@ body {
   padding: 0;
   line-height: 1.5;
 }
-
+.body {
+  background-color: #ffffff;
+}
 .layout {
   max-width: 960px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 0rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 99vh;
+}
+.innerWrapper {
+  background-color: #e9e9e9;
+  padding: 2rem;
 }
 
 .header {
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   height: 80px;
+}
+nav {
+  margin-right: 2rem;
 }
 
 .nav__link {
@@ -78,16 +94,21 @@ a {
 footer {
   background-color: #fdb900;
   bottom: 2rem;
-  border-top: 1px solid gray;
   color: black;
   font-size: 0.625rem;
   letter-spacing: 0.5px;
-  margin: auto;
-  margin-top: 2rem;
-  padding: 2rem 0;
-  position: absolute;
+  margin-top: 1rem;
+}
+.footer__links {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
+}
+.footer__bottom-links {
+  padding: 1rem;
   text-align: center;
-  width: 760px;
 }
 footer a {
   color: black;

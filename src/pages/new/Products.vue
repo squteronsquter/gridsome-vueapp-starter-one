@@ -1,8 +1,8 @@
 <template>
-  <layout :showFooter="false">
+  <Layout :showFooter="true">
     <h1>Produkty Pilz Polska</h1>
     <p>Oferta produktowa Pilz Polska</p>
-  </layout>
+  </Layout>
 </template>
 
 <script>

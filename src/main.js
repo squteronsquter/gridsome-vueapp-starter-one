@@ -5,6 +5,8 @@
 import AltLayout from '~/layouts/AltLayout.vue';
 
 export default function(Vue, { router, head, isClient }) {
-	// Set default layout as a global component
+	head.htmlAttrs = { lang: 'pl' };
+	head.bodyAttrs = { class: 'body' };
+	// Set default layout or its alternative ie. in this case it is AltLayout as a global component
 	Vue.component('Layout', AltLayout);
 }
