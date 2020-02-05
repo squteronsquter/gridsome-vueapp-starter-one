@@ -70,6 +70,7 @@ body {
 
 .active {
   color: #fdb900;
+  text-decoration: none;
 }
 a {
   color: black;
