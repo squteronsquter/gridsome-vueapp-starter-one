@@ -2,13 +2,13 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <g-link exact class="nav__link" to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Start</g-link>
+        <g-link exact class="nav__link" to="/">Start</g-link>
         <g-link class="nav__link" to="/about/">O nas</g-link>
-        <g-link class="nav__link" to="/new">Nowości</g-link>
-        <g-link class="nav__link" to="/new/products/">Produkty</g-link>
+        <g-link exact class="nav__link" to="/new">Nowości</g-link>
+        <g-link exact class="nav__link" to="/new/products/">Produkty</g-link>
       </nav>
     </header>
     <slot />
@@ -31,12 +31,6 @@ body {
   padding: 0;
   line-height: 1.5;
 }
-a,
-a:visited,
-a:focus,
-a:hover {
-  color: #333;
-}
 
 .layout {
   max-width: 960px;
@@ -55,5 +49,9 @@ a:hover {
 
 .nav__link {
   margin-left: 20px;
+}
+
+.active {
+  color: #cba93a;
 }
 </style>
