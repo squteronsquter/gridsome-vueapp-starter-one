@@ -12,6 +12,7 @@
       </nav>
     </header>
     <slot />
+    <Footer v-if="showFooter"></Footer>
   </div>
 </template>
 
@@ -22,6 +23,22 @@ query {
   }
 }
 </static-query>
+
+<script>
+import Footer from "~/components/Footer.vue";
+export default {
+  metaInfo: {
+    title: "Witamy"
+  },
+  components: {
+    Footer
+  },
+  components: {
+    Footer
+  },
+  props: ["showFooter"]
+};
+</script>
 
 <style>
 body {
@@ -52,6 +69,29 @@ body {
 }
 
 .active {
-  color: #cba93a;
+  color: #fdb900;
+}
+a {
+  color: black;
+}
+footer {
+  background-color: #fdb900;
+  bottom: 2rem;
+  border-top: 1px solid gray;
+  color: black;
+  font-size: 0.625rem;
+  letter-spacing: 0.5px;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  position: absolute;
+  text-align: center;
+  width: 760px;
+}
+footer a {
+  color: black;
+}
+.home-links a {
+  margin-right: 1rem;
 }
 </style>

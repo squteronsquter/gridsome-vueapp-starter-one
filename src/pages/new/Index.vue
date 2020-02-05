@@ -1,5 +1,5 @@
 <template>
-  <Default>
+  <Default :showFooter="true">
     <h1>Nowości w ofercie Pilz Polska</h1>
     <p>Nowości w naszej ofercie:</p>
     <ul>

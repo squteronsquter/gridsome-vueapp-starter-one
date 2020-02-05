@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :showFooter="true">
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Logo" src="~/logo.png" width="200" />
 
@@ -17,16 +17,5 @@
   </Layout>
 </template>
 
-<script>
-export default {
-  metaInfo: {
-    title: "Witamy"
-  }
-};
-</script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
+

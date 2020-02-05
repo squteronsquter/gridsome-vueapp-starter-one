@@ -12,6 +12,7 @@
       </nav>
     </header>
     <slot />
+    <Footer v-if="showFooter"></Footer>
   </div>
 </template>
 
@@ -22,6 +23,19 @@ query {
   }
 }
 </static-query>
+
+<script>
+import Footer from "~/components/Footer.vue";
+export default {
+  metaInfo: {
+    title: "Witamy"
+  },
+  components: {
+    Footer
+  },
+  props: ["showFooter"]
+};
+</script>
 
 <style>
 body {
@@ -53,6 +67,9 @@ body {
   margin-left: 20px;
 }
 .active {
-  color: #cba93a;
+  color: #fdb900;
+}
+a {
+  color: black;
 }
 </style>
