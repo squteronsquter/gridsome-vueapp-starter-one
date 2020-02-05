@@ -16,6 +16,9 @@ import Default from "~/layouts/Default.vue";
 export default {
   components: {
     Default
+  },
+  metaInfo: {
+    title: "Nowości"
   }
 };
 </script>
