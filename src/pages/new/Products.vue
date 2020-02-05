@@ -4,3 +4,11 @@
     <p>Oferta produktowa Pilz Polska</p>
   </layout>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    title: "Produkty"
+  }
+};
+</script>
