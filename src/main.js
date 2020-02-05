@@ -5,6 +5,9 @@
 import AltLayout from '~/layouts/AltLayout.vue';
 
 export default function(Vue, { router, head, isClient }) {
+	// Remove "generator" meta tag
+	const gIndex = head.meta.findIndex(e => e.name === 'generator');
+	if (gIndex !== -1) head.meta.splice(gIndex, 1);
 	head.htmlAttrs = { lang: 'pl' };
 	head.bodyAttrs = { class: 'body' };
 	head.htmlAttrs = {

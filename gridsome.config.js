@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-	siteName: 'Akademia Pilz',
+	siteName: 'AP',
+	siteUrl: 'https://www.akademiapilz.xyz',
 	plugins: []
 };

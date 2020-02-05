@@ -6,3 +6,8 @@ node_modules
 dist
 .env
 .env.*
+.layouts.Default.vue
+.layouts.README.md
+.pages.README.md
+.STATIC.README.md
+.templates.README.md
