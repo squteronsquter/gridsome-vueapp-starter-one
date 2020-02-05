@@ -1,6 +1,11 @@
 <template>
   <Default>
-    <h1>New Index Page</h1>
+    <h1>Nowości w ofercie Pilz Polska</h1>
+    <p>Nowości w naszej ofercie:
+      <ul>
+        <li>Nowe szkolenie 0923810 - Przełącznik PNOZ 40004</li>
+      </ul>
+    </p>
   </Default>
 </template>
 

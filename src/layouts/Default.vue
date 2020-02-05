@@ -5,8 +5,8 @@
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/">Strona główna</g-link>
+        <g-link class="nav__link" to="/about/">O nas</g-link>
       </nav>
     </header>
     <slot />
@@ -23,16 +23,19 @@ query {
 
 <style>
 body {
-  background-color: #ac5f86;
-  color: #ffffff;
+  background-color: #fff;
+  color: #2a2a2a;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
-a {
-  color: #ffffff;
+a,
+a:visited,
+a:focus,
+a:hover {
+  color: #333;
 }
 
 .layout {
