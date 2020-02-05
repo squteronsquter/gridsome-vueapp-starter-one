@@ -20,7 +20,21 @@
 <script>
 export default {
   metaInfo: {
-    title: "Nowości"
+    title: "Nowości",
+    meta: [
+      { charset: "utf-8" },
+      { name: "author", content: "Pilz GmbH" },
+      {
+        name: "description",
+        content:
+          "Nowości na platformie szkoleniowej wspierającej automatyzację przemysłową z wykorzystaniem urządzeń Pilz – dowiedz się więcej o naszych innowacyjnych produktach na potrzeby automatyzacji przemysłowej. - Pilz - PL"
+      },
+      {
+        name: "keywords",
+        content:
+          "Nowości szkoleniowe, Szkolenia na temat bezpieczeństwa w przemyśle, Automatyzacja w przemyśle, produkty dla automatyzacji"
+      }
+    ]
   }
 };
 </script>

@@ -25,7 +25,20 @@
 <script>
 export default {
   metaInfo: {
-    title: "Produkty"
+    title: "Produkty",
+    meta: [
+      { charset: "utf-8" },
+      { name: "author", content: "Pilz GmbH" },
+      {
+        name: "description",
+        content:
+          "Automatyzacja przemysłowa z wykorzystaniem urządzeń Pilz – dowiedz się więcej o naszych innowacyjnych produktach na potrzeby automatyzacji przemysłowej. - Pilz - PL"
+      },
+      {
+        name: "keywords",
+        content: "Automatyzacja w przemyśle, produkty dla automatyzacji"
+      }
+    ]
   }
 };
 </script>
